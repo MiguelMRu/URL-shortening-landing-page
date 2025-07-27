@@ -2,6 +2,7 @@ import './App.css'
 import { Navigation } from './components/Navigation'
 import { Head } from './components/Head'
 import { Links } from './components/Links'
+import { Footer } from './components/Footer'
 function App() {
 
   /*Your users should be able to:
@@ -19,6 +20,8 @@ function App() {
       <Navigation/>
       <Head/>
       <Links/>
+      <Footer/>
+      
     </>
   )
 }

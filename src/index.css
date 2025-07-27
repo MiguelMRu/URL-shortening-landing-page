@@ -1,3 +1,33 @@
+:root{
+  --cyan: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --red: hsl(0, 87%, 67%);
+  --gray: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --very-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+  --font-sans: 'Poppins', sans-serif;
+  /*
+  ### Primary
+
+- Cyan: hsl(180, 66%, 49%)
+- Dark Violet: hsl(257, 27%, 26%)
+
+### Secondary
+
+- Red: hsl(0, 87%, 67%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 75%)
+- Grayish Violet: hsl(257, 7%, 63%)
+- Very Dark Blue: hsl(255, 11%, 22%)
+- Very Dark Violet: hsl(260, 8%, 14%)
+
+*/
+}
+
+
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -12,6 +42,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  
 }
 
 /* Sections
@@ -23,6 +54,7 @@ html {
 
 body {
   margin: 0;
+  font-family: var(--font-sans);
 }
 
 /**
