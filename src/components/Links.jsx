@@ -8,9 +8,9 @@ export function Links(){
                 <button type="submit">Shorten it!</button>
                 <span className="Error"></span>
             </form>
-            <div className="likns-list">
+            <section className="likns-list">
 
-            </div>
+            </section>
 
             <Info/>
 
