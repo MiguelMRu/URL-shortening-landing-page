@@ -15,7 +15,7 @@ export function Navigation(){
 
             <div className='login-container'>
                 <a href="">Login</a>
-                <a href="">Sing up</a>
+                <a href="" className='sign-up'>Sign Up</a>
             </div>
         </nav>
         
