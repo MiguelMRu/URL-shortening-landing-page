@@ -1,4 +1,5 @@
 import { Info } from "./Info"
+import "./Links.css"
 
 export function Links(){
     return(
