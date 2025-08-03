@@ -2,26 +2,28 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 3rem;
+    padding: 3rem 10rem 6rem 10rem;
     overflow: hidden;
-    flex-wrap: wrap-reverse;
+
 
     & div {
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 50%;
 
         & h1{
             /*font-size: 4.5rem;*/
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            line-height: normal;
-            font-weight: 1000;
+            font-size: clamp(2.5rem, 5vw, 5.5rem);
+            line-height: 1.1;
+            font-weight: 700;
             color: var(--very-dark-blue);
         }
 
         & p{
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: var(--grayish-violet);
+            font-weight: 500;
+            line-height: 1.5;
         }
 
         & a{
@@ -29,7 +31,7 @@ header {
             color: white;
             padding: 0.5rem 2rem;
             border-radius: 2rem;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
             text-decoration: none;
             transition: background-color 0.3s ease;
             width: fit-content;
@@ -43,8 +45,9 @@ header {
     }
 
     & img {
-        max-width: clamp(20rem, 30vw, 40rem);
+        width: 65rem;
         height: auto;
+        transform: translateX(30%);
     }
 }
 
