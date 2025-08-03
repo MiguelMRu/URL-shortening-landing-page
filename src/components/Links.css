@@ -1,5 +1,5 @@
 main{
-    padding: var(--main-padding);
+    padding: 2rem 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,14 +10,44 @@ main{
 
 
 form{
-    width: 80%;
+    width: 100%;
     display: flex;
     gap: 1rem;
-    padding: 2rem;
-    border-radius: 5px;
+    padding: 2.5rem;
+    border-radius: 10px;
     /*background-image: url("../assets/images/bg-boost-desktop.svg");
     background-size: cover;
     background-position: center;*/
     background: var(--dark-violet) url("../assets/images/bg-boost-desktop.svg") center center / cover;
-    margin-top: -90px;
+    margin-top: -80px;
+
+    & input{
+        flex: 1;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        color: var(--white);
+
+        &:focus-visible{
+            outline: none;
+        }
+    }
+
+    & button{
+        padding: 0.5rem 2rem;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--cyan);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            filter: brightness(1.1);
+        }
+
+        
+    }
 }
