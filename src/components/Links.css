@@ -21,6 +21,8 @@ form{
     background-position: center;*/
     background: var(--dark-violet) url("../assets/images/bg-boost-desktop.svg") center center / cover;
     margin-top: -80px;
+    flex-wrap: wrap;
+    height: fit-content;
 
     & .input-container{
         display: flex;
@@ -62,4 +64,62 @@ form{
         font-size: 0.9rem;
         margin-top: 0.5rem;
     }
+}
+
+.links-list{
+    width: 100%;
+}
+
+.link-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--white);
+    width: 100%;
+    flex-wrap: wrap;
+
+    & .original-link{
+        color: var(--dark-violet);
+        font-weight: 500;
+        text-decoration: none;
+        word-break: break-all;
+        flex-grow: 1;
+    }
+
+    & .shortened-link-container{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        & .shortened-link{
+        color: var(--cyan);
+        font-weight: 700;
+        text-decoration: none;
+        word-break: break-all;
+        }
+
+        & .copy-button{
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 10px;
+            background-color: var(--cyan);
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+            &.copied{
+                background-color: var(--dark-violet);
+            }
+
+            &:hover{
+                filter: brightness(1.1);
+            }
+
+
+        }
+    }
+
+    
 }
