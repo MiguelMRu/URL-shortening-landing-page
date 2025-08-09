@@ -15,13 +15,19 @@ form{
     gap: 1rem;
     padding: 2.5rem;
     border-radius: 10px;
+    flex-direction: column;
     /*background-image: url("../assets/images/bg-boost-desktop.svg");
     background-size: cover;
     background-position: center;*/
     background: var(--dark-violet) url("../assets/images/bg-boost-desktop.svg") center center / cover;
     margin-top: -80px;
 
-    & input{
+    & .input-container{
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+
+        & input{
         flex: 1;
         padding: 0.5rem 1rem;
         border: none;
@@ -47,7 +53,13 @@ form{
         &:hover{
             filter: brightness(1.1);
         }
+    }
+}
+    
 
-        
+    & .Error{
+        color: var(--red);
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
     }
 }

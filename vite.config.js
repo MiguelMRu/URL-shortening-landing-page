@@ -4,4 +4,16 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    proxy: {
+      '/api/cleanuri': {
+        target: 'https://cleanuri.com/api/v1',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/cleanuri/, ''),
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; MyApp/1.0)'
+        }
+      }
+    }
+  }
 })
