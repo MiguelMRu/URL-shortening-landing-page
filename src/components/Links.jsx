@@ -1,7 +1,6 @@
 import { useLinks } from "../hooks/useLinks.jsx";
 import { Info } from "./Info"
 import "./Links.css"
-
 import { LinkContainer } from "./LinkContainer.jsx";
 
 export function Links(){

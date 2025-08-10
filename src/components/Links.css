@@ -123,3 +123,44 @@ form{
 
     
 }
+
+@media screen and (width <= 550px) {
+    main {
+        padding: 2rem 1rem;
+        
+    }
+
+    form {
+        padding: 1.5rem;
+        margin-top: 0;
+        background-image: url("../assets/images/bg-boost-mobile.svg");
+
+        & .input-container {
+            flex-direction: column;
+
+            
+        }
+
+        & button {
+                border-radius: 10px;
+                height: 3rem;
+            }
+    }
+
+    .link-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .shortened-link-container {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & .copy-button{
+            width: 100%;
+        }
+        
+    }
+}
