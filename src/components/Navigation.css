@@ -5,6 +5,14 @@ nav{
     justify-content: space-between;
     color: var(--grayish-violet);
     font-weight: 700;  
+    gap: 2rem;
+
+    & .nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
 
     & .nav-links{
         display: flex;
@@ -35,6 +43,59 @@ nav{
             opacity: 0.6;
             color: white;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+        align-items: flex-start;
+        padding: 2rem 2rem;
+
+        & .nav-container {
+            display: none;
+        }
+
+        & .menu-icon {
+            display: block;
+            cursor: pointer;
+            width: 2rem;
+        }
+
+        & input[type="checkbox"]:checked ~ .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 85%;
+        height: 40vh;
+        position: absolute;
+        top: 10%;
+        left: 7%;
+        border-radius: 10px;
+        color: white;
+        right: 0;
+        background-color: var(--dark-violet);
+        z-index: 2;
+        font-size: 1.2rem;
+
+        & .nav-links {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        & .login-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            & .sign-up {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    }
     }
 }
 

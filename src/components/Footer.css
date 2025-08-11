@@ -81,3 +81,50 @@ footer{
     }
 
 }
+
+@media screen and (width <= 550px) {
+    footer{
+        & .get-started{
+            padding-block: 2rem;
+            background-image: url('../assets/images/bg-boost-mobile.svg');
+            background-size: cover;
+
+            & h2{
+                font-size: 1.5rem;
+            }
+
+            & a{
+                padding: 0.5rem 1.5rem;
+            }
+        }
+
+        & .footer-links{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            text-align: center;
+
+            & .links{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                & h5{
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+
+        & .social-links{
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+
+            & img{
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+        }
+    }
+}

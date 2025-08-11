@@ -6,7 +6,7 @@ header {
     overflow: hidden;
 
 
-    & div {
+    & hgroup {
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -59,7 +59,7 @@ header {
         padding: 1rem;
         width: 100%;
 
-        & div {
+        & hgroup {
             width: 100%;
             align-items: center;
             justify-content: center;
